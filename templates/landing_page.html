@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block page_title %}
+    Home page
+{% endblock %}
+{% block page_content %}
+    <style>
+        a{
+            text-decoration: none;
+            color: dodgerblue;
+        }
+        a:hover{
+            color: #6d0bb8;
+        }
+    </style>
+    {% if request.user.email %}
+        <h1>Welcome, {{ request.user.email}}!</h1>
+        <h3><a href="{% url 'logout user' %}">Logout</a>?</h3>
+    {% else %}
+        <h1>Greetings, <a href="{% url 'register user' %}">register</a>
+            if you don't have an account or <a href="{% url 'login user' %}">log in </a> if you have :)</h1>
+    {% endif %}
+
+{% endblock %}

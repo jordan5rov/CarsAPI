@@ -1,0 +1,8 @@
+/CarsAPI/api/migrations/
+/CarsAPI/api/migrations/__pycache__/
+/CarsAPI/authentication/migrations/
+/CarsAPI/authentication/migrations/__pycache__/
+/CarsAPI/web/migrations/
+/CarsAPI/web/migrations/__pycache__/
+/venv/
+/.idea/
